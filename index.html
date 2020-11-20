@@ -1,300 +1,227 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap Template Atlas</title>
-    <meta name="description" content="Free bootstrap template Atlas">
-    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
-    <!-- custom.css -->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- bootstrap.min.css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- font-awesome -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    
-    <!-- AOS -->
-    <link rel="stylesheet" href="css/aos.css">
+
+	<meta charset="utf-8">
+	<title>Milness - Landing page Showcase App</title>
+	<meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="images/favicon.png" rel="icon"/>
+	
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<!-- Icon fonts -->
+	<link rel="stylesheet" href="libs/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/superfish-master/css/superfish.css">
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="libs/ytp-player/css/jquery.mb.YTPlayer.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+
+	<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto:400,500,700,300|Pacifico' rel='stylesheet' type='text/css'>
+
+	<!-- Main styles -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<style>
+		g#logoMark path {
+			fill:white;
+		}
+		
+		.is-sticky  g#logoMark path {
+			fill:black;
+		}
+
+	</style>
+
+	<style>
+		
+		.hero-container {
+			position: relative;
+			width:100%;
+			height:100vh;
+			overflow: hidden;
+		}
+
+		.sub {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		@media (min-aspect-ratio: 16/9) {
+
+			.fullscreen-bg__video {
+				width: 100vw;
+				height: auto;
+			}
+		}
+
+		@media (max-aspect-ratio: 16/9) {
+			.fullscreen-bg__video {
+				width: auto;
+				height: 100vh;
+			}
+		}
+
+		.dots-layer {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			background: url("./img/dots.png");
+			z-index: 10;
+		}
+		
+		.dark-overlay {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.63;
+			background-color: #000;
+			z-index: 15;
+		}
+
+		.asdf {
+			padding-top: 215px;
+			padding-bottom: 180px;
+			z-index: 20;
+		}
+		
+	</style>
+	
 </head>
 
 <body>
-    <!-- banner -->
-    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(img/shutterstock/stock-photo-startup-business-people-group-working-everyday-job-at-modern-office-321052289.jpg);">
-        <div style="padding-top:2em; background-color: rgba(0,12,59,0.8); "  >
-        <div class="container text-center text-md-left">
-            <header>
-                <div class="row justify-content-end">
-                    <div class="col-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.1729 35.8736">
-                            <g id="black-rgb">
-                                <g id="logoMark">
-                                    <path id="logoMark_CompoundPathItem_" data-name="logoMark &lt;CompoundPathItem&gt;" d="M35.1729,25.0441V20.0533H26.2694l1.9277-5.5382h6.9758V9.5325H29.888L33.1308,0H26.8983L23.6637,9.5325H16.7206L19.9716,0H13.731L10.382,9.5325H0v4.9826H8.7891L6.7062,20.0533H0v4.9908H5.04L1.7235,34.6256H8.054L11.37,25.0441ZM14.8827,14.409h7.1882l-2.034,5.8H12.8488Z"/>
-                                    <path id="logoMark_PathItem_" data-name="logoMark &lt;PathItem&gt;" d="M20.347,27.1125a4.3806,4.3806,0,1,0,4.385,4.385A4.3874,4.3874,0,0,0,20.347,27.1125Z"/>
-                                </g>
-                            </g>
-                        </svg>
 
-                    </div>
-<!--                    <div class="col-6 align-self-center text-right">-->
-<!--                        <a href="#" class="text-white lead">Get Early Access</a>-->
-<!--                    </div>-->
-                </div>
-            </header>
-            <h1 data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="display-3 text-white font-weight-bold my-5">
-            	We deliver<br>
-            	software.
-            </h1>
-            <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
-                Hashbang is a small company of experienced software consultants 
-                <br> <span class="auto-type"></span>
-            </p>
-            <div style="min-height:94px;color:white" class="foo">
-                
-            </div>
-<!--            cloud/cyber/infrastructure/UX/agile delivery-->
-<!--            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>-->
-        </div>
-        </div>
+<!-- Start Header -->
+
+	<header  id="top-nav">
+	<div class="container">
+		<div class="row">
+			<!-- Logo -->
+			<a class="logo smooth-scroll" href="#top">
+				<div style="display: flex;">
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 0 35.1729 35.8736">
+							<g id="black-rgb">
+								<g id="logoMark">
+									<path id="logoMark_CompoundPathItem_" data-name="logoMark &lt;CompoundPathItem&gt;" d="M35.1729,25.0441V20.0533H26.2694l1.9277-5.5382h6.9758V9.5325H29.888L33.1308,0H26.8983L23.6637,9.5325H16.7206L19.9716,0H13.731L10.382,9.5325H0v4.9826H8.7891L6.7062,20.0533H0v4.9908H5.04L1.7235,34.6256H8.054L11.37,25.0441ZM14.8827,14.409h7.1882l-2.034,5.8H12.8488Z"/>
+									<path id="logoMark_PathItem_" data-name="logoMark &lt;PathItem&gt;" d="M20.347,27.1125a4.3806,4.3806,0,1,0,4.385,4.385A4.3874,4.3874,0,0,0,20.347,27.1125Z"/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<div style="margin-left: 15px">Hashbang</div>
+				</div>
+			</a>
+			<!-- Top navigation -->
+			
+			
+			<!-- Mobile menu -->
+			
+		</div>
+	</div>
+</header>
+
+<!-- Start Slider section	 -->
+
+<section class="hero-container">
+	<video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video sub">
+		<source src="../../milness-template/app/1056171731-sd.mov" type="video/mp4">
+	</video>
+	<div class="dots-layer"></div>
+	<div class="dark-overlay"></div>
+	<div class="slide sub asdf " style="right: 0">
+		<div class="container-slide">
+			<div class="container">
+				<div class="row">
+			
+					<!-- Content slider -->
+					<div class="col-lg-7 col-md-8 col-sm-8 content-mill pull-right text-right">
+						<div class="content-slide">
+							<!-- heading title -->
+							<h1 class="heading-title-big">
+								<span>Digital solutions</span><br> For your projects
+							</h1>
+							<!-- horizontal line -->
+							<span class="horizontal-line"><span></span></span>
+							<!-- description slider -->
+							<div class="description">
+								<p>Trusted delivery partner of secure projects for enterprise business. We work with our customers to provide digital solutions for their critical needs.</p>
+							</div>
+
+							<div class="description" style="padding-top: 32px;">
+								<p>For more information contact us <strong>info@hashbang.digital</strong></p>
+							</div>
+						</div>
+						<!-- Download buttons -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+	<footer style="padding-top: 0">
+		<div class="container">
+			<div class="row">
+				<div class="bottom-footer white-color" style="padding:0; margin-top: 16px;">
+					<div class="col-md-6">
+						<div class="footer-copyright">
+							<p>Hashbang Digital &copy; 2020 All Rights Reserved.</p>
+						</div>	
+					</div>
+					<div class="col-md-6">
+					<!-- Bottom nav -->
+						<div class="footer-menu">
+							<ul>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Licenses</a></li>
+							</ul>
+						</div>
+					<!-- End Bottom nav -->	
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll to top -->
+	<div class="top icon-down toTopFromBottom">
+        <a href="#top" class="smooth-scroll"><i class="pe-7s-angle-up"></i></a>
     </div>
-    <!-- three-blcok -->
-<!--    <img src="img/teacher.svg" alt="Training" height="100px" width="100px">-->
+    <!-- End Scroll to top -->
 
-    <div class="container my-5 py-2">
-        <h2 class="text-center font-weight-bold my-5">Our Services</h2>
-        <div class="row">
-            <div data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <div style="width:181px; height: 181px;" class="mx-auto">
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<!-- GOOGLE MAP -->
+<!--	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfIvcRb39yOu1OFOX2G0c4jemKpLgpJl0&sensor=false"></script>-->
 
-                    <img src="img/coding.svg" alt="Development" width="181px">
-                    <svg xmlns="http://www.w3.org/2000/svg" title="triangle" viewBox="0 0 100 100" style="position: relative; left: 6px; top: -143px; z-index: -10;width: 180px; height:180px" >
-                        <g id="t1">
-                            <polygon points="8,22 83,0 34,62"  />
-                        </g>
-                    </svg>
-                </div>
-                <h4>Development</h4>
-                <p>We build your product or integrate our experts in your team</p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <div style="width:181px; height: 181px;padding-top: 48px; padding-left:36px;" class="mx-auto">
-                    <img src="img/teacher.svg" alt="Training" height="100px" width="100px">
-                    <svg xmlns="http://www.w3.org/2000/svg" title="triangle" viewBox="0 0 100 100" style="position: relative; left: 6px; top: -126px; z-index: -10;width: 180px; height:180px" name="triangle">
-                        <g id="t2">
-                            <polygon points="0,0 90,15 72,45" />
-                        </g>
-                    </svg>
-                </div>
-                <h4>Training</h4>
-                <p>Hire our professionals to power-up your personnel</p>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center">
-                <div style="width:181px; height: 181px;padding-top: 48px; padding-left:36px;" class="mx-auto">
-                    <img src="img/support.svg" alt="Support" height="100px" width="100px">
-                    <svg xmlns="http://www.w3.org/2000/svg" title="triangle" viewBox="0 0 100 100" style="position: relative; left: 6px; top: -126px; z-index: -10;width: 180px; height:180px;">
-                        <g id="t3">
-                            <polygon points="0,36 23,8 90,36" />
-                        </g>
-                    </svg>
-                </div>
-                <h4>Support</h4>
-                <p>Et tu brutus</p>
-            </div>
-        </div>
-    </div>
-    <!-- feature (skew background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
-        <div class="container my-5">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-                    <h2 class="font-weight-bold">Email us</h2>
-                    <p class="my-4">info@hashbang.digital</p>
-<!--                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>-->
-                </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
-                    <img src="img/feature-1.png" alt="Take a look inside" class="mx-auto d-block">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- feature (green background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
-        <div class="container">
-            <div class="row justify-content-between text-center text-md-left">
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 flex-md-last">
-<!--                    <h2 class="font-weight-bold">Safe and reliable</h2>-->
-<!--                    <p class="my-4">-->
-<!--                        Duo suas detracto maiestatis ad, commodo lucilius invenire nec ad,-->
-<!--                        <br> eum et oratio disputationi. Falli lobortis his ad-->
-<!--                    </p>-->
-<!--                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Learn More</a>-->
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
-<!--                    <img src="img/feature-2.png" alt="Safe and reliable" class="mx-auto d-block">-->
-                    <div style="height: 352px;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- LIBS -->
+	<script src="libs/jquery/jquery-1.12.0.min.js"></script>
+<!--	<script src="js/libs.js" ></script>-->
 
-    <!-- price table -->
-<!--    <div class="container my-5 py-2" id="price-table">-->
-<!--        <h2 class="text-center font-weight-bold d-block mb-3">Check our pricing</h2>-->
-<!--        <div class="row">-->
-<!--            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">-->
-<!--                <h4 class="my-4">STARTUP</h4>-->
-<!--                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p>-->
-<!--                <ul class="list-unstyled">-->
-<!--                    <li>Up to 5 Documents</li>-->
-<!--                    <li>Up to 3 Reviews</li>-->
-<!--                    <li>5 team Members</li>-->
-<!--                    <li>Limited Support</li>-->
-<!--                </ul>-->
-<!--                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>-->
-<!--            </div>-->
-<!--            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">-->
-<!--                <h4 class="my-4">PREMIUM</h4>-->
-<!--                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">10</span> / MO.</p>-->
-<!--                <ul class="list-unstyled">-->
-<!--                    <li>Up to 15 Documents</li>-->
-<!--                    <li>Up to 10 Reviews</li>-->
-<!--                    <li>25 team Members</li>-->
-<!--                    <li>Limited Support</li>-->
-<!--                </ul>-->
-<!--                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Free</a>-->
-<!--            </div>-->
-<!--            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">-->
-<!--                <h4 class="my-4">PROFESSIONAL</h4>-->
-<!--                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">30</span> / MO.</p>-->
-<!--                <ul class="list-unstyled">-->
-<!--                    <li>Unlimited Documents</li>-->
-<!--                    <li>Unlimited Reviews</li>-->
-<!--                    <li>Unlimited Members</li>-->
-<!--                    <li>Unlimited Support</li>-->
-<!--                </ul>-->
-<!--                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <!-- client -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-<!--            <div class="row">-->
-<!--                <div class="col-sm-4 col-md-2 py-2 align-self-center">-->
-<!--                    <img src="img/client-1.png" class="mx-auto d-block">-->
-<!--                </div>-->
-<!--                <div class="col-sm-4 col-md-2 py-2 align-self-center">-->
-<!--                    <img src="img/client-2.png" class="mx-auto d-block">-->
-<!--                </div>-->
-<!--                <div class="col-sm-4 col-md-2 py-2 align-self-center">-->
-<!--                    <img src="img/client-3.png" class="mx-auto d-block">-->
-<!--                </div>-->
-<!--                <div class="col-sm-4 col-md-2 py-2 align-self-center">-->
-<!--                    <img src="img/client-4.png" class="mx-auto d-block">-->
-<!--                </div>-->
-<!--                <div class="col-sm-4 col-md-2 py-2 align-self-center">-->
-<!--                    <img src="img/client-5.png" class="mx-auto d-block">-->
-<!--                </div>-->
-<!--                <div class="col-sm-4 col-md-2 py-2 align-self-center">-->
-<!--                    <img src="img/client-6.png" class="mx-auto d-block">-->
-<!--                </div>-->
-<!--            </div>-->
-        </div>
-    </div>
-    <!-- contact -->
-    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
-        <div class="container my-5">
-            <div class="row justify-content-between">
-                <div class="col-md-6 text-white">
-                    <h2 class="font-weight-bold">Contact Us</h2>
-<!--                    <p class="my-4">-->
-<!--                        Te iisque labitur eos, nec sale argumentum scribentur,-->
-<!--                        <br> augue disputando in vim. Erat fugit sit at, ius lorem.-->
-<!--                    </p>-->
-                    <ul class="list-unstyled">
-                        <li>Email : info@hashbang.digital</li>
-                        <li>Address : 12 Constance Street, London, England, E16 2DQ</li>
-                    </ul>
-                </div>
-<!--                <div class="col-md-6">-->
-<!--                    <form>-->
-<!--                    	<div class="row">-->
-<!--	                        <div class="form-group col-md-6">-->
-<!--	                            <label for="name">Your Name</label>-->
-<!--	                            <input type="name" class="form-control" id="name">-->
-<!--	                        </div>-->
-<!--	                        <div class="form-group col-md-6">-->
-<!--	                            <label for="Email">Your Email</label>-->
-<!--	                            <input type="email" class="form-control" id="Email">-->
-<!--	                        </div>-->
-<!--	                    </div>-->
-<!--	                    <div class="form-group">-->
-<!--	                        <label for="message">Message</label>-->
-<!--	                        <textarea class="form-control" id="message" rows="3"></textarea>-->
-<!--	                    </div>-->
-<!--                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Submit</button>-->
-<!--                    </form>-->
-<!--                </div>-->
-            </div>
-        </div>
-    </div>
+	<!-- Use scripts -->
+<!--	<script src="js/common.js"></script>-->
 
-	<!-- copyright -->
-	<div class="jumbotron jumbotron-fluid" id="copyright">
-        <div class="container">
-            <div class="row justify-content-between">
-            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
-                    Copyright © 2020 Hashbang Digital. <div style="color:#2b557f;font-size: 7px">Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>, <a href="http://www.freepik.com/" title="Freepik">Freepik</a> & <a href="https://www.flaticon.com/free-icon/coding_711284?term=code&page=2&position=37" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-                </div>
-                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
-<!--                    <a href="#" class="d-inline-block text-center ml-2">-->
-<!--                    	<i class="fa fa-facebook" aria-hidden="true"></i>-->
-<!--                    </a>-->
-                    <a href="#" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-<!--                    <a href="#" class="d-inline-block text-center ml-2">-->
-<!--                    	<i class="fa fa-medium" aria-hidden="true"></i>-->
-<!--                    </a>-->
-                    <a href="#" class="d-inline-block text-center ml-2">
-                    	<i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <!-- AOS -->
-    <script src="js/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
-    <script>
-      AOS.init({
-      });
-
-      // Can also be included with a regular script tag
-      // import Typed from 'typed.js';
-
-      var options = {
-          strings: [
-              'with expertise in cloud',
-              'with expertise in cyber',
-              'with expertise in infrastructure',
-              'with expertise in UX',
-              'with expertise in agile delivery',
-          ],
-          smartBackspace: true,
-          typeSpeed: 40
-      };
-
-      
-      
-      
-      
-      
-      
-
-      var typed = new Typed('.auto-type', options);
-    </script>
 </body>
-
 </html>
